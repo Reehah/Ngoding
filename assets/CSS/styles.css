@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html, .container{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4E3B7;
+}
+
+.header, .brand, .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    margin: 50px;
+}
+
+.brand-name{
+    font-size: 24px;
+    color: #060607;
+    padding-left: 40px;
+}
+
+.nav-links{
+    list-style-type: none;
+}
+
+.list-item{
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 12.8px;
+    color: #0C3751;
+}
+
+.register{
+    color: #C36344;
+    border: 1px solid #C36344;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    margin: 30px 100px;
+}
+
+.page-information{
+    margin-top:50px;
+}
+
+.line{
+    align-items: center;
+}
+
+.new-era{
+    color: #805A4E;
+    display: inline;
+}
+
+.message{
+    font-size: 50px;
+    padding-top: 30px;
+    width: 750px;
+    letter-spacing: 3px;
+    color: #0E2E41;
+}
+
+.paragraph{
+    font-size: 11px;
+    color: #474545;
+    padding-top: 50px;
+}
+
+.trial-sale{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 300px;
+}
+
+.free-trial{
+    background-color: #D9AB21;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 40px;
+    outline: none;
+    border-style: none;
+}
+
+.subscribe{
+    color: #A6A2A2;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.price{
+    color: #073450;
+}
+
+.zokkie-image{
+    position: relative;
+}
+
+.portfolio{
+    position: absolute;
+    padding: 20px 90px;
+    color: #271F17;
+    background-color: #F6E8B8;
+    left: 900px;
+    top: 560px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.designation{
+    font-size: 12px;
+}
