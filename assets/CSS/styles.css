@@ -1,123 +1,189 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('/assets/CSS/roboto.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html, .container{
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #F4E3B7;
+body,
+html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.header, .brand, .nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  height: 100vh;
+  background-color: #f4e3b7;
+  display: flex;
+  flex-direction: column;
 }
 
-.header{
-    margin: 50px;
+.header,
+.brand,
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.brand-name{
-    font-size: 24px;
-    color: #060607;
-    padding-left: 40px;
+.header {
+  height: 120px;
+  padding: 0 80px;
 }
 
-.nav-links{
-    list-style-type: none;
+.brand-name {
+  font-size: 24px;
+  color: #060607;
+  padding-left: 40px;
 }
 
-.list-item{
-    text-decoration: none;
-    padding-right: 20px;
-    font-size: 12.8px;
-    color: #0C3751;
+.nav-links {
+  list-style-type: none;
 }
 
-.register{
-    color: #C36344;
-    border: 1px solid #C36344;
-    border-radius: 20px;
-    padding: 10px;
+.list-item {
+  text-decoration: none;
+  padding-right: 20px;
+  font-size: 12.8px;
+  color: #0c3751;
 }
 
-.content{
-    display: flex;
-    margin: 30px 100px;
+.nav-links li:not(:last-child) {
+  margin-right: 40px;
 }
 
-.page-information{
-    margin-top:50px;
+.register {
+  color: #c36344;
+  border: 1px solid #c36344;
+  border-radius: 20px;
+  padding: 10px;
 }
 
-.line{
-    align-items: center;
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 30px 80px 0;
+  flex-grow: 1;
+  height: calc(100% - 120px);
 }
 
-.new-era{
-    color: #805A4E;
-    display: inline;
+.page-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.message{
-    font-size: 50px;
-    padding-top: 30px;
-    width: 750px;
-    letter-spacing: 3px;
-    color: #0E2E41;
+.preheader {
+  display: flex;
+  align-items: center;
 }
 
-.paragraph{
-    font-size: 11px;
-    color: #474545;
-    padding-top: 50px;
+.new-era {
+  color: #805a4e;
+  display: flex;
+  align-items: center;
 }
 
-.trial-sale{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    width: 300px;
+.new-era span {
+  margin-left: 20px;
 }
 
-.free-trial{
-    background-color: #D9AB21;
-    color: #ffffff;
-    border-radius: 20px;
-    padding: 20px 40px;
-    outline: none;
-    border-style: none;
+.message {
+  font-size: 52px;
+  margin: 30px 0;
+  letter-spacing: 10px;
+  line-height: 60px;
+  color: #0e2e41;
 }
 
-.subscribe{
-    color: #A6A2A2;
-    font-size: 11px;
-    padding-bottom: 10px;
+.paragraph {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #474545;
+  margin-top: 30px;
 }
 
-.price{
-    color: #073450;
+.trial-sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 50%;
 }
 
-.zokkie-image{
-    position: relative;
+.free-trial {
+  background-color: #d9ab21;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 40px;
+  outline: none;
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.portfolio{
-    position: absolute;
-    padding: 20px 90px;
-    color: #271F17;
-    background-color: #F6E8B8;
-    left: 900px;
-    top: 560px;
-    text-align: center;
-    letter-spacing: 2px;
+.subscribe {
+  color: #a6a2a2;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
-.designation{
-    font-size: 12px;
+.price {
+  color: #073450;
+  font-size: 24px;
+}
+
+.price-small {
+  font-size: 12px;
+}
+
+.content-image {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  background-image: radial-gradient(
+    farthest-corner,
+    rgba(29, 206, 79, 0.1),
+    rgba(206, 225, 216, 0.604),
+    transparent,
+    transparent
+  );
+  background-size: 120% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zokkie-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.zokkie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio {
+  position: absolute;
+  color: #271f17;
+  background-color: #f6e8b8;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  letter-spacing: 2px;
+  width: 60%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.designation {
+  font-size: 12px;
 }
